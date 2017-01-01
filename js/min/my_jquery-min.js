@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#player_left").hide()}),$(document).ready(function(){$("#player_left").click(function(){$("#player_right").hide()})});

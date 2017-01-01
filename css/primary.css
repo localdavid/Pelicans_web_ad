@@ -1,0 +1,89 @@
+#banner {
+	/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position*/
+	position: relative;
+	width: 300px;
+	height: 600px;
+	background-image: url("../images/Bkgd.gif");
+/* 	background: yellow; */
+	overflow: hidden;
+}
+
+#logo {
+	position: relative;
+	top: 10px;
+	width:	260px;
+/* 	height: 50px; */
+	margin: 0 auto;		
+/* 	background: yellow; */
+}
+
+img {
+	width:	260px;
+/* 	background: white; */
+	margin: 0 auto;
+}
+
+#player_left {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	
+	/* Positioned absolute relative to nearest parent that's not static (in this case #banner) which is positioned relative.	*/
+	position: absolute;
+	bottom: -130px;
+	left: -10px;	
+	width: 158px;
+	height: 100%;
+	background-image: url("../images/Anthony_Davis_1.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform-origin: left;
+	transition-duration: 1s;	
+	
+/* 	background-color: aqua; */
+/*
+	transform-origin: top left;
+	animation-duration: 5s;
+*/
+}
+
+.left_large {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);		
+	position: absolute;		
+	transform: scale(1.10);
+	transform-origin: left;
+	transition-duration: .8s;
+	z-index: 1;	
+	bottom: -0px;
+	margin-bottom: 15px;
+	filter: drop-shadow(0px 6px 11px rgba(0, 0, 0, 0.3))	
+}
+
+#player_right {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);		
+	/* Positioned absolute relative to nearest parent that's not static (in this case #banner) which is positioned relative.	*/
+	position: absolute;
+	bottom: -150px;
+	right: -11px;	
+	width: 185px;
+	height: 100%;
+	background-image: url("../images/Buddy_3.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	transform-origin: right bottom;
+	transition-duration: .8s;	
+}
+
+.right_large {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);	
+	position: absolute;	
+	transform: scale(1.11);
+	transform-origin: left;
+	transition-duration: 2s;
+	z-index: 1;	
+	margin-bottom: -25px;
+	filter: drop-shadow(0px 6px 11px rgba(0, 0, 0, 0.3))	
+}
+
+.blur {
+	filter: blur(1px);
+	z-index: 0;
+	opacity: .92;
+}
